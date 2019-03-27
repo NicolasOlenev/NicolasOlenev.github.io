@@ -121,8 +121,11 @@ textarea {
     margin: 15px;
     font-style: oblique;
     position: fixed;
+}
 
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    user-select: none;      
+.copyright p {
+    -moz-user-select: none; /* Mozilla Firefox */
+    -ms-user-select: none; /* Internet Explorer (не поддерживается) */
+    -o-user-select: none; /* Opera Presto (не поддерживается) */
+    -webkit-user-select: none; /* Google Chrome, Opera Next, Safari */
 }
